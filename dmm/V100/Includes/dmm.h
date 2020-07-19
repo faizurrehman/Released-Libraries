@@ -2,7 +2,7 @@
  * @file dmm.h
  * @author Faiz Ur Rehman
  * @brief Dynamic memory management library
- * @version 0.0
+ * @version 1.0
  * @date 2020-07-04
  *
  * @copyright Copyright (c) 2020
@@ -13,7 +13,7 @@
 #ifndef DMM_H
 #define DMM_H
 
-/*	header files **************************************************************/
+/*	External header files *****************************************************/
 
 #include <inttypes.h>
 
@@ -21,13 +21,15 @@
 /*	External macros ***********************************************************/
 /*	External enums ************************************************************/
 
+/** @brief Enum for error handling in DMM library
+ */
 typedef enum
 {
-	eSuccess,
-	eMallocFail,
-	eReallocFail,
-    eOutOfMemory,
-    eInvalidArgument
+	eDMMSuccess,
+	eDMMMallocFail,
+	eDMMReallocFail,
+    eDMMOutOfMemory,
+    eDMMInvalidArgument
 }
 eDmmError_t;
 
